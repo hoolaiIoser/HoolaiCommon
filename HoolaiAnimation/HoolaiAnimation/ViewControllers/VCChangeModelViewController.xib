@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VCChangeModelViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBl-dq-KdO">
+                    <rect key="frame" x="235.5" y="265.5" width="129" height="69"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="129" id="8q4-gd-CCR"/>
+                        <constraint firstAttribute="height" constant="69" id="JRH-SB-o0c"/>
+                    </constraints>
+                    <state key="normal" title="Dismiss me">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickDismissBtn:" destination="-1" eventType="touchUpInside" id="bg7-Zd-u2d"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.13725490200000001" green="0.72549019609999998" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="lBl-dq-KdO" secondAttribute="centerY" id="0P7-eM-84i"/>
+                <constraint firstAttribute="centerX" secondItem="lBl-dq-KdO" secondAttribute="centerX" id="I3G-LK-ew8"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

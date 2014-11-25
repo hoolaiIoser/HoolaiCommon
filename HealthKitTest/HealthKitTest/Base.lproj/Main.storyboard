@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JxU-FX-6hx">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="vce" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dC3-Ue-VFO">
+                                <rect key="frame" x="233" y="277" width="134" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="8eg-bK-Jdj"/>
+                                    <constraint firstAttribute="height" constant="46" id="r32-Sk-Vwh"/>
+                                </constraints>
+                                <state key="normal" title="写入数据">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickWriteData:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gFD-xC-XfV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前数据：0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEM-pL-3q2">
+                                <rect key="frame" x="226.5" y="343" width="147" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="d8k-dX-l0A"/>
+                                    <constraint firstAttribute="width" constant="147" id="sEt-6N-6yM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="dC3-Ue-VFO" secondAttribute="centerY" id="7YN-AO-IHh"/>
+                            <constraint firstAttribute="centerX" secondItem="dC3-Ue-VFO" secondAttribute="centerX" id="EpR-ID-Czf"/>
+                            <constraint firstAttribute="centerX" secondItem="tEM-pL-3q2" secondAttribute="centerX" id="Ix6-aF-saI"/>
+                            <constraint firstItem="tEM-pL-3q2" firstAttribute="top" secondItem="dC3-Ue-VFO" secondAttribute="bottom" constant="20" id="ry6-1S-T2I"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="currentDataLabel" destination="tEM-pL-3q2" id="U0H-gb-ptK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--TouchID View Controller-->
+        <scene sceneID="bMl-ks-b2d">
+            <objects>
+                <viewController id="JxU-FX-6hx" customClass="TouchIDViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gap-ar-lga"/>
+                        <viewControllerLayoutGuide type="bottom" id="EKp-dJ-epi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KTg-3l-P2w">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMi-EJ-JU1">
+                                <rect key="frame" x="217" y="260.5" width="167" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="NFQ-lY-wv0"/>
+                                    <constraint firstAttribute="height" constant="79" id="XpW-Pr-jQ5"/>
+                                </constraints>
+                                <state key="normal" title="Open Health Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickOpenBtn:" destination="JxU-FX-6hx" eventType="touchUpInside" id="9Ub-tl-dhn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="bMi-EJ-JU1" secondAttribute="centerY" id="X40-0z-nFo"/>
+                            <constraint firstAttribute="centerX" secondItem="bMi-EJ-JU1" secondAttribute="centerX" id="bDD-za-lo4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oS5-m5-1Lm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="142" y="1088"/>
+        </scene>
+    </scenes>
+</document>
